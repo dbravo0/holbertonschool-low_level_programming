@@ -8,14 +8,15 @@
 
 int main(void)
 {
-	char d;
+	int a = 97;
 
-	for (d = '0' ; d <= '9' ; ++d)
+	while (a < 123)
 	{
-		putchar(d);
+		putchar(a);
+		++a;
 	}
 
-	putchar('\n');
+	putchar(10);
 
 	return (0);
 }

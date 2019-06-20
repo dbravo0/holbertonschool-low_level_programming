@@ -8,18 +8,15 @@
 
 int main(void)
 {
-	char a;
+	int d = 48;
 
-	for (a = 'a' ; a <= 'z' ; ++a)
+	while (d <= 57)
 	{
-
-		if (a != q && a != e)
-		{
-			putchar(a);
-		}
+		putchar(d);
+		++d;
 	}
 
-	putchar(\n);
+	putchar(10);
 
 	return (0);
 }
