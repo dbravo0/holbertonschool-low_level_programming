@@ -8,11 +8,18 @@
 
 int main(void)
 {
-	char a;
+	int hn = 48;
+	char ha;
 
-	for (a = 'z' ; a <= 'a' ; --a)
+	while (hn <= 57)
 	{
-		putchar(a);
+		putchar(hn);
+		++hn;
+	}
+
+	for (ha = 'a' ; ha <= 'f' ; ++ha)
+	{
+		putchar(ha);
 	}
 
 	putchar('\n');
