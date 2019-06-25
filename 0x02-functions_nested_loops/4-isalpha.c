@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * _isalpha - check the code for Holberton School students.
+ * _isalpha - Entry point
  *
  *@r: The character to print
  *
