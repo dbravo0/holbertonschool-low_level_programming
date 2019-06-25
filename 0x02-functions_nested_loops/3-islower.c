@@ -3,7 +3,7 @@
 /**
  * _islower - check the code for Holberton School students.
  *
- *@c: The character to print
+ *@r: The character to print
  *
  * Return: 1 if is on lower case, 0 if not
  */
