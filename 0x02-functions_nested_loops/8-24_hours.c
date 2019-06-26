@@ -10,9 +10,9 @@ void jack_bauer(void)
 
 	for (j = '0' ; j <= '2' ; j++)
 	{
-		for (a = '0' ; a <= '5' ; a++)
+		for (a = '0' ; a <= '9' ; a++)
 		{
-			for (c = '0' ; c <= '9' ; c++)
+			for (c = '0' ; c <= '5' ; c++)
 			{
 				for (k = '0' ; k <= '9' ; k++)
 
