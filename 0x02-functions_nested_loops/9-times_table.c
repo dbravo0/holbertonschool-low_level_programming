@@ -7,42 +7,30 @@
  */
 void times_table(void)
 {
-	int a, b, c, x, y, z;
+	int vt;
+	int ot;
+	int mr;
 
-	for (a = 0 ; a <= 9; a++)
+	for (vt = 0 ; vt <= 9 ; vt++)
 	{
-		for (b = 0; b <= 9; b++)
+
+		for (ot = 1 ; ot <= 9 ; ot++)
 		{
-			c = a * b;
 
-			x = (a == 3 && c == 9) || (a > 4 && b == 1);
+			mr = vt * ot;
 
-			if (c < 10)
-			{
-				_putchar(c + '0');
-			}
-			else
-			{
-				x = c / 10;
-				y = c % 10;
-				_putchar(x + '0');
-				_putchar(y + '0');
-			}
-			if (b == 9)
-			{
-				_putchar(10);
-			}
-			else if (c >= 10 || ((a == 2 || a == 4) && c == 8) || z)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
-			else
-			{
-				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
-			}
+		if (mr <= 9)
+		{
+			_putchar(mr);
+			_putchar(',');
+			_putchar(' ');
+			_putchar(' ');
 		}
-	}
+
+	for (ot = 0 ; ot <= 9 ; ot++)
+
+		if (ot < 9)
+		{
+			_putchar(mr);
+		}
 }
