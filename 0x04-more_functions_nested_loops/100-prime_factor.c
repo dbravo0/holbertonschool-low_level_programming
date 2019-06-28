@@ -14,11 +14,11 @@ int main(void)
 	{
 		if (p % c == 0)
 		{
-			p = c;
+			p /= c;
 			c--;
 		}
 	}
 	printf("%ld\n", p);
 
-	return ('\n');
+	return (0);
 }
