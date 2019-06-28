@@ -41,7 +41,6 @@ int main(void)
 			if (t < 100)
 			{
 				putchar(' ');
-
 			}
 		}
 	}
