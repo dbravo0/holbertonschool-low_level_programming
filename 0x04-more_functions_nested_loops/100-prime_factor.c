@@ -14,7 +14,7 @@ int main(void)
 	{
 		if (p % c == 0)
 		{
-			p /= c;
+			p = c;
 			c--;
 		}
 	}
