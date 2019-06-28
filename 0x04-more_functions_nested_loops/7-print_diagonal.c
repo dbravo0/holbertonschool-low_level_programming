@@ -1,8 +1,8 @@
 #include "holberton.h"
 
 /**
- * print_diagonal - Draws a diagonal line in the terminal
- * @n: number of times of \
+ * print_diagonal - Draws a diagonal line
+ * @n: Number of time the character
  */
 void print_diagonal(int n)
 {
@@ -15,13 +15,16 @@ void print_diagonal(int n)
 			for (l = 0 ; l < d ; l++)
 			{
 				_putchar(' ');
+
 			}
 			_putchar('\\');
 			_putchar('\n');
+
 		}
 	}
 	else
 	{
-		_putchar('\n');
+		_putchar(10);
+
 	}
 }
