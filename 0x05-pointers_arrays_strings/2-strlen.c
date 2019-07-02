@@ -3,7 +3,7 @@
 /**
  * _strlen - Swaps the values of two integers
  * @s : Is the string value
- * Return : s is the value for return
+ * Return: len is the value for return
  */
 int _strlen(char *s)
 {
