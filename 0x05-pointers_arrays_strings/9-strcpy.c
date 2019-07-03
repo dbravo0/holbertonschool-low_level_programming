@@ -9,20 +9,21 @@
  */
 char *_strcpy(char *dest, char *src)
 {
-	int c;
-	int s = 0;
+	int s;
+	int c = 0;
 
-	for (c = 0 ; src[s] == '\0' ; c++)
+	while (1)
 	{
-		s++;
+		if (src[c] == '\0')
+			break;
+
+		c++;
 	}
 
-	for (c = 0 ; c < s ; c++)
-	{
-		dest[c] = src[c];
-	}
+	for (s = 0 ; s < c ; s++)
+		dest[s] = src[s];
 
-	dest[c] = '\0';
+	dest[s] = '\0';
 
 	return (dest);
 }
