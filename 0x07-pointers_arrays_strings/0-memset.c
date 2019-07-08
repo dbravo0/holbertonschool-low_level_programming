@@ -5,6 +5,8 @@
  * @s: Pointer to the buffer to be set
  * @b: Is the value to be set
  * @n: The number of bytes to be set
+ *
+ * Return: Value of the pointer for the buffer
  */
 char *_memset(char *s, char b, unsigned int n)
 {
