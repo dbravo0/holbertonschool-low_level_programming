@@ -4,7 +4,7 @@
  * factorial - Returns the factorial of a given number
  * @n: Factorial value
  *
- * Return: 0 for the lenght of thr string
+ * Return: n is lower than 0 returns -1, returns 1 otherwise
  */
 int factorial(int n)
 {
