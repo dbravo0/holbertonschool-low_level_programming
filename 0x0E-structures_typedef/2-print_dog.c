@@ -4,29 +4,24 @@
 
 /**
  * print_dog - Prints a struck dog
- * @d: ...
- * 
+ * @d: Pointer to the variables
+ *
  */
 void print_dog(struct dog *d)
 {
 	if (d->name == NULL)
 	{
-		d->name = "(nill)";
+		d->name = "(nil)";
 		printf("Name: %s\n", d->name);
 	}
 	else
-	{
-		printf("Name: %s\n", d->name);
-	}
+			printf("Name: %s\n", d->name);
 
-	if (d->age)
-	{
-		printf("Age: %f\n", d->age);
-	}
+	printf("Age: %f\n", d->age);
 
 	if (d->owner == NULL)
 	{
-		d->owner = "(nill)";
+		d->owner = "(nil)";
 		printf("%s", d->owner);
 	}
 	else
