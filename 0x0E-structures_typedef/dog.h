@@ -1,8 +1,6 @@
 #ifndef DOG_H_
 #define DOG_H_
 
-int _putchar(char c);
-
 /**
  * struct dog - Properties of a set of variables
  * @name: Variable that holds the name
@@ -18,5 +16,8 @@ struct dog
 	float age;
 	char *owner;
 };
+
+int _putchar(char c);
+void init_dog(struct dog *d, char *name, float age, char *owner);
 
 #endif
