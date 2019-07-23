@@ -1,5 +1,5 @@
-#ifndef DOG_H_
-#define DOG_H_
+#ifndef DOG_H
+#define DOG_H
 
 /**
  * struct dog - Properties of a set of variables
@@ -19,5 +19,6 @@ struct dog
 
 int _putchar(char c);
 void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
 
 #endif
