@@ -3,7 +3,7 @@
 /**
  * get_op_func - Searchs for match the pronted operator
  * @s: Pointer for compare the operator
- * 
+ *
  * Return: Pointer to the function that corresponds with the operator
  **/
 int (*get_op_func(char *s))(int, int)
