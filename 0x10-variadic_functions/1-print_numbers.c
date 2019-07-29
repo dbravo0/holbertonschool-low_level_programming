@@ -8,27 +8,19 @@
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	int i;
 	unsigned int c;
-	va_list args;
+	va_list a;
 
-	va_start(args, n);
+	va_start(a, n);
 
 	for (c = 0 ; c < n ; c++)
 	{
-		i = va_arg(args, int);
-		printf("%d", i);
+		printf("%d", va_arg(a, unsigned int));
 
-		if (separator == NULL)
-		{
-			return;
-		}
-		else if (c != n - 1)
-		{
+		if (c < (n - 1) && separator != NULL)
 			printf("%s", separator);
-		}
 	}
 
-	va_end(args);
+	va_end(a);
 	printf("\n");
 }
