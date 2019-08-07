@@ -2,19 +2,19 @@
 
 /**
  * print_listint - Prints all the elements of a listint_t list
- * @h: ...
+ * @h: Sizes of nodes
  *
+ * return: Number of nodes
  **/
 size_t print_listint(const listint_t *h)
 {
 	int c;
 
-	while (c != NULL)
+	for (c = 0 ; h != NULL ; c++)
 	{
-		printf("%d\n", c->n);
-		c = c->next;
-		return (listint_t->n);
+		printf("%d\n", h->n);
+		h = h->next;
 	}
-	return (0);
 
+	return (c);
 }
