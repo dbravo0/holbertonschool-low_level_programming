@@ -15,7 +15,7 @@ int main(int argc, char **argv)
 	if (argc != 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp %s %s\n", argv[1], argv[2]);
-		exit(98);
+		exit(97);
 	}
 	fd0 = open(argv[1], O_RDONLY);
 	if (fd0 == -1)
@@ -34,18 +34,18 @@ int main(int argc, char **argv)
 		if ((write(fd1, bf, wr)) != wr)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s", argv[2]);
-			exit(98);
+			exit(99);
 		}
 	}
 	if (close(fd0) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d", fd0);
-		exit(98);
+		exit(100);
 	}
 	if (close(fd1) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d", fd1);
-		exit(98);
+		exit(100);
 	}
 	return (0);
 }
