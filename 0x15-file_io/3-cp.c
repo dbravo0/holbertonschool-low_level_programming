@@ -31,7 +31,7 @@ int main(int argc, char **argv)
 	}
 	while ((wr = read(fd0, bf, 1024)) > 0)
 	{
-		if ((write(fd1, bf, wr)) != wr)
+		if (write(fd1, bf, wr) != wr)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s", argv[2]);
 			exit(99);
