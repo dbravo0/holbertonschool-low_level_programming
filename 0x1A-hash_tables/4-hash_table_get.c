@@ -5,12 +5,12 @@
  * @ht: Hash table you want to look into
  * @key: Key you are looking for
  *
- * Return: Value associated with the element, or NULL if key couldn’t be found
- */
+ * Return: Value associated with the element or NULL if key couldn’t be found
+ **/
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
-	hash_node_t *tmp = NULL;
-	unsigned long int index = 0;
+	hash_node_t *tmp;
+	unsigned long int index;
 
 	if (!ht || !key)
 		return (NULL);
