@@ -1,0 +1,11 @@
+#include "holberton.h"
+
+/**
+ * _islower - ...
+ * @c: ...
+ * Return: ...
+ */
+int _islower(int c)
+{
+	return(0);
+}
